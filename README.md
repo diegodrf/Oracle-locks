@@ -20,7 +20,7 @@
         * Número da instância. **Este campo é obrigatório se o valor anterior for 'True'**
         
     * Para coletar o tempo de lock no item:
-        * http://URL_PARA_O_CONTAINER/discovery
+        * http://URL_PARA_O_CONTAINER/getlock
         * Usuário do Banco de dados
         * Senha do usuário
         * IP do Banco de dados
@@ -31,7 +31,7 @@
         * ID do Blocking_Session
         
     * Para coletar a quantidade total de locks:
-        * http://URL_PARA_O_CONTAINER/discovery
+        * http://URL_PARA_O_CONTAINER/lockcount
         * Usuário do Banco de dados
         * Senha do usuário
         * IP do Banco de dados
