@@ -59,7 +59,7 @@ class Database:
 
         object_list = []
         for row in self.rows:
-            if row[3] > 90:
+            if row[3] > 60:
                 d = OrderedDict()
                 d["{#BLOCKING_SESSION}"] = row[0]
                 d["{#SECONDS_IN_WAIT}"] = row[3]
