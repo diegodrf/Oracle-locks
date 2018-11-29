@@ -3,8 +3,10 @@ from Oracle import Database
 
 app = Flask(__name__)
 
+
 @app.route('/discovery', methods=['POST'])
 def discovery():
+
     user = request.form['2']
     password = request.form['3']
     server = request.form['4']
@@ -36,6 +38,7 @@ def getlock():
     j = db.getlock(blocking_session)
 
     return jsonify(j)
+
 
 @app.route('/lockcount', methods=['POST'])
 def lockcount():
