@@ -3,7 +3,7 @@ import os
 from time import sleep
 
 username = 'diegodrf'
-timestamp = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+timestamp = datetime.datetime.now().strftime('%Y%m%d-%H%M%S')
 project = str(os.path.split(os.path.abspath(os.path.curdir))[1]).lower()
 imageName = '{}/{}:{}'.format(username, project, timestamp)
 imageNameLatest = '{}/{}:latest'.format(username, project)
